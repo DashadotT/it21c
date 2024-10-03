@@ -4,3 +4,8 @@ const person1 = {
     age: 19,
     gender: "Male"
 }
+
+//Process and Output
+console.log("Name: " + person1.name);
+console.log("Age: " + person1.age);
+console.log("Gender: " + person1.gender);
