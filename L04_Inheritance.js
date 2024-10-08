@@ -70,3 +70,9 @@ class Student extends Person {
         personElement.innerHTML += `<br><strong>Major:</strong> ${this.course}`;
     }
 }
+
+// Creating an object (instance) of the Person class
+const studenOne = new Student('Mark Jovan Octat', 19, 'Male', 'Playing Instruments and Coding', 'Information Technology');
+
+// Calling methods
+studenOne.displayInfo();
