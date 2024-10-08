@@ -12,4 +12,21 @@ class Person {
         this.#gender = gender;
         this.#hobby = hobby;
     }
+
+    //Getters
+    get name() {
+        return this.#name;
+    }
+
+    get age() {
+        return this.#age;
+    }
+
+    get gender() {
+        return this.#gender;
+    }
+
+    get hobby() {
+        return this.#hobby;
+    }
 }
