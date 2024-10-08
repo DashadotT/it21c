@@ -56,4 +56,17 @@ class Student extends Person {
         super(name, age, gender, hobby);
         this.course = course;
     }
+
+    // Overriding the displayInfo method
+    displayInfo() {
+        super.displayInfo();
+        console.log("Course: " + this.course);
+    }
+
+    // Extending the displayInfoHTML method
+    displayInfoHTML() {
+        super.displayInfoHTML();
+        const personElement = document.getElementById('personOne');
+        personElement.innerHTML += `<br><strong>Major:</strong> ${this.course}`;
+    }
 }
