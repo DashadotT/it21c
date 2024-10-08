@@ -29,4 +29,24 @@ class Person {
     get hobby() {
         return this.#hobby;
     }
+
+    // Method to display person information in the console
+    displayInfo() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Gender: " + this.gender);
+        console.log("Hobby: " + this.hobby);
+
+    }
+
+    // Method to display person information in the HTML
+    displayInfoHTML() {
+        const personElement = document.getElementById('personOne');
+        personElement.innerHTML = `
+            <strong>Name:</strong> ${this.name}<br>
+            <strong>Age:</strong> ${this.age}<br>
+            <strong>Gender:</strong> ${this.gender}<br>
+            <strong>Hobby:</strong> ${this.hobby}
+        `;
+    }
 }
