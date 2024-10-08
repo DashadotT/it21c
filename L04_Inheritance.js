@@ -50,3 +50,10 @@ class Person {
         `;
     }
 }
+
+class Student extends Person {
+    constructor(name, age, gender, hobby, course) {
+        super(name, age, gender, hobby);
+        this.course = course;
+    }
+}
