@@ -30,3 +30,9 @@ class ChartCreator {
 
 }
 
+class LineChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.areaCtx = document.getElementById('areaChart');
+    }
+}
