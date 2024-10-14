@@ -35,4 +35,8 @@ class LineChart extends ChartCreator {
         super(dataUrl);
         this.areaCtx = document.getElementById('areaChart');
     }
+
+    createCharts() {
+        this.createAreaChart();
+    }
 }
