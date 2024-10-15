@@ -70,6 +70,10 @@ class BarChart extends ChartCreator {
         super(dataUrl);
         this.barCtx = document.getElementById('barChart');
     }
+
+    createCharts() {
+        this.createBarChart();
+    }
 }
 
 const lineChartCreator = new LineChart('L05&6_Data.json');
