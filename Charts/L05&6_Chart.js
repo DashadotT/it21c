@@ -74,6 +74,27 @@ class BarChart extends ChartCreator {
     createCharts() {
         this.createBarChart();
     }
+
+    createBarChart() {
+        new Chart(this.barCtx, {
+            type: 'bar',
+            data: {
+                labels: this.chartData.labels,
+                datasets: [{
+                    label: '# of Students',
+                    data: this.chartData.data,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
 }
 
 const lineChartCreator = new LineChart('L05&6_Data.json');
